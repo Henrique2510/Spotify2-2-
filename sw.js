@@ -1,8 +1,8 @@
-const CACHE = "spotify2-v1";
+const CACHE = "spotify2-v2";
 
 const ARQUIVOS = [
     "./",
-    "./Index.html",
+    "./index.html",
     "./admin.html",
     "./manifest.json",
     "./Spotify.png",
