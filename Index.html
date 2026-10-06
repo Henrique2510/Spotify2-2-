@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./Spotify.png">
+    <link rel="stylesheet" href="./CSS/usuario.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#e0b43a">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <script type="module" src="./JS/musicas.js" defer></script>
+
+</head>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("./sw.js");
+        });
+    }
+</script>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="image">
+                <img src="./Spotify.png" alt="Spotify2" draggable="false">
+            </div>
+            <div class="barra-pesquisa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search preview-icon">
+                    <path d="m21 21-4.34-4.34" />
+                    <circle cx="11" cy="11" r="8" />
+                </svg>
+                <input id="pesquisar" type="text" placeholder="Pesquisar música...">
+            </div>
+            <div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="tela">
+            <div class="biblioteca">
+                <h1>Curtidas</h1>
+                <ul id="listaCurtidas"></ul>
+            </div>
+            <div class="explorar">
+                <h2 id="title">Músicas</h2>
+                <ul id="listaMusicas"></ul>
+            </div>
+            <div class="descricao">
+                <h1 id="descricao">Descrição</h1>
+                <div id="conteudoDescricao"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <audio id="player" controls></audio>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+ 
+body {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+}
+ 
+header {
+    width: 100vw;
+    height: 7vh;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+ 
+main {
+    width: 100vw;
+    height: 83vh;
+}
+ 
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+img {
+    width: 80%;
+    height: 100%;
+}
+ 
+#header {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ 
+.image {
+    width: 5vw;
+    height: 95%;
+    display: flex;
+}
+ 
+input {
+    width: 25vw !important;
+    height: 48px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: #b4afaf;
+}
+ 
+input::placeholder {
+    color: #b4afaf;
+}
+ 
+#entrar {
+    width: 7vw;
+    height: 5.4vh;
+}
+
+.barra-pesquisa {
+    position: relative;
+    width: 400px;
+    height: 48px;
+    color: #b4afaf;
+}
+ 
+.barra-pesquisa svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 30px;
+    color: #b4afaf;
+}
+ 
+.barra-pesquisa input {
+    width: 100%;
+    height: 48px;
+    padding: 0 20px 0 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: #fff;
+}
+ 
+.tela {
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    gap: 7px;
+}
+ 
+.tela h1 {
+    width: 100%;
+    padding: 16px 24px;
+    font-weight: 800;
+    font-size: 24px;
+    background: #18181b;
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ 
+.biblioteca {
+    width: 20vw;
+    height: 83vh;
+    border-radius: 7px;
+    background: linear-gradient(182deg, rgba(33, 33, 38, 1) 0%, rgb(18, 17, 17) 100%);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a3a transparent;
+}
+ 
+.explorar {
+    width: 60vw;
+    height: 83vh;
+    border-radius: 7px;
+    background: linear-gradient(180deg, rgba(33, 33, 38, 1) 0%, rgb(18, 17, 17) 100%);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a3a transparent;
+}
+ 
+.descricao {
+    width: 22vw;
+    height: 83vh;
+    border-radius: 7px;
+    background: linear-gradient(178deg, rgba(33, 33, 38, 1) 0%, rgba(18, 17, 17) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+ 
+.descricao h1 {
+    width: 100%;
+    padding: 16px 24px;
+    font-weight: 800;
+    font-size: 24px;
+    background: #18181b;
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ 
+.descricao img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+ 
+.descricao h2 {
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+ 
+.descricao p {
+    font-size: 18px;
+}
+ 
+#title {
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px 24px;
+    font-weight: 800;
+    background: #18181b;
+    color: #fff;
+    font-size: 24px;
+}
+ 
+#listaMusicas {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+ 
+#listaMusicas li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0f0f0f;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+}
+ 
+#listaMusicas li:hover {
+    background-color: #1a1a1d;
+}
+ 
+#listaMusicas li img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+ 
+#listaCurtidas {
+    list-style: none;
+    padding: 12px;
+}
+ 
+#listaCurtidas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+}
+ 
+#listaCurtidas li:hover {
+    background: #2a2a30;
+}
+ 
+#listaCurtidas li img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+ 
+.btnCurtir {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: #212126;
+    color: #f0eaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    flex-shrink: 0;
+}
+ 
+.btnCurtir svg {
+    width: 20px;
+    height: 20px;
+}
+ 
+.btnCurtir:hover {
+    background: #333;
+}
+ 
+.btnCurtir.ativo {
+    color: #e0b43a;
+}
+ 
+.btnCurtir.ativo svg {
+    fill: currentColor;
+}
+ 
+#player {
+    width: 40vw;
+    height: 6vh;
+    color-scheme: dark;
+}
+ @media (max-width: 768px) {
+
+    .tela {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .biblioteca {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .explorar {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .descricao {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .descricao img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #player {
+        width: 90vw;
+    }
+
+    .barra-pesquisa {
+        width: 70vw;
+    }
+
+    #entrar {
+        width: 20vw;
+    }
+}
